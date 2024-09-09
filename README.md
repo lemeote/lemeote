@@ -3,21 +3,36 @@ Greetings, fellow coders and crypto enthusiasts! 🪙 I'm a Blockchain Developer
 
 ## My Blockchain Stack
 
-```python
-class BlockchainDev:
-    def __init__(self):
-        self.languages = ["Solidity", "Rust", "Go"]
-        self.tools = ["Ethereum", "Solana", "Polkadot"]
-        self.currently_learning = "ZK-Rollups & Layer 2 Scaling"
-        self.fun_fact = "I once explained blockchain to my grandma using Lego blocks. She’s now a Bitcoin HODLer."
+```rust
+struct BlockchainDev {
+    languages: Vec<&'static str>,
+    tools: Vec<&'static str>,
+    currently_learning: &'static str,
+    fun_fact: &'static str,
+}
 
-    def build_smart_contract(self):
-        print("Writing immutable code...")
-        print("Deploying to the blockchain...")
-        print("Praying for no gas fee spikes...")
-        
-chain_dev = BlockchainDev()
-chain_dev.build_smart_contract()
+impl BlockchainDev {
+    fn new() -> BlockchainDev {
+        BlockchainDev {
+            languages: vec!["Solidity", "Rust", "Go"],
+            tools: vec!["Ethereum", "Solana", "Polkadot"],
+            currently_learning: "ZK-Rollups & Layer 2 Scaling",
+            fun_fact: "I once explained blockchain to my grandma using Lego blocks. She’s now a Bitcoin HODLer.",
+        }
+    }
+
+    fn build_smart_contract(&self) {
+        println!("Writing immutable code...");
+        println!("Deploying to the blockchain...");
+        println!("Praying for no gas fee spikes...");
+    }
+}
+
+fn main() {
+    let chain_dev = BlockchainDev::new();
+    chain_dev.build_smart_contract();
+}
+
 ```
 
 ### Projects that Run on Decentralized Fuel
