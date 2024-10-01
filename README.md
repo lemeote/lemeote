@@ -47,17 +47,6 @@ fn main() {
 2. **Rule #2**: Never underestimate the importance of gas fees. Sometimes, the real cost is watching your entire balance disappear in fees.
 3. **Rule #3**: If it can be decentralized, it will be. If it can't be decentralized, someone will try to make it anyway.
 
-## Debugging the Blockchain (Yes, It Happens)
-
-- **Symptom**: Your transaction is stuck in the mempool.
-- **Solution**: Bump the gas fee, but only if you're willing to risk a few more tokens. Or take a coffee break while the network catches up.
-
-- **Symptom**: Your smart contract is eating up way too much gas.
-- **Solution**: Optimize your contract logic. Sometimes that "for" loop you thought was harmless is costing you a small fortune.
-
-- **Symptom**: Your decentralized app (dApp) is behaving strangely.
-- **Solution**: Check the connection between your frontend and the blockchain. Sometimes Web3.js needs a little nudge (or a full restart).
-
 ## Wisdom from the Blockchain
 
 - **"Not your keys, not your crypto."** Always remember this when you're handling private keys.
